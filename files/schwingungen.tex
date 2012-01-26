@@ -41,8 +41,8 @@
     \end{minipage} &
 	\begin{minipage}[]{8cm}
     	\underline{ohne Federmasse:}\\
-		$m\ddot{y}+c\,y=0 \qquad \omega_0=\sqrt{\dfrac{c}{m}} \qquad T=2\pi
-		\sqrt{\dfrac{m}{c}}$\\ \\
+		$m\ddot{y}+c\,y=0 \qquad \omega_0=\sqrt{\dfrac{c}{m}} = \sqrt{\dfrac{c_1 +
+		c_2}{m_1 + m_2}}$ \\ $T=2\pi \sqrt{\dfrac{m}{c}}$\\ \\
 		rücktr. Kraft: $F=-cy=m\,\ddot{y}$ \\ \\
 		\underline{mit Federmasse:}\\ \\
 		$\omega_0=\sqrt{\dfrac{c}{m+\frac{m_F}{3}}} \qquad
@@ -152,9 +152,12 @@
 	    \underline{$D<1$: Schwingfall}\\
 		$m\,\ddot{y}+b\,\dot{y}+c\,y=\ddot{y}+\underbrace{\dfrac{b}{m}}_{2\delta}
 		\cdot\dot{y}+\underbrace{\dfrac{c}{m}}_{\omega_0^{\,2}}\cdot y=0$\\
+		Ansatz abklingende Schwingung: \\
 		$y(t)=A e^{-\delta t}\sin(\omega_d t+\varphi_0)$\\ \\
-		$\omega_0=\sqrt{\dfrac{c}{m}} \qquad \omega_d =
-		\sqrt{\dfrac{c}{m}-\delta^2}=\omega_0 \sqrt{1-D^2}$\\ \\
+		$\omega_0=\sqrt{\dfrac{c}{m}}$ \\ 
+		$\omega_d =	\sqrt{\dfrac{c}{m}-\delta^2}=\omega_0 \sqrt{1-D^2} =
+		\sqrt{\omega_0^2 - \delta^2}$\\
+		\\
 		$\omega_r=\omega_0\sqrt{1-2\cdot D^2}$\\ \\
 		$D=\dfrac{\delta}{\omega_0}=\dfrac{\frac{\Lambda}{2\pi}}{\sqrt{1+\left(\frac{\Lambda}{2\pi}\right)^2}}
 		\qquad \delta=\dfrac{b}{2m} \qquad F_d=-b\dot y$\\
@@ -190,7 +193,6 @@
   		$E_{t+\Delta t}$ = $E$ zu Zeitpunkt $t+\Delta t$ $[J]$\\
   		$A_t$ = $A$ zu Zeitpunkt $t$ $[1]$\\
   		$A_{t+\Delta t}$ = $A$ zu Zeitpunkt $t+\Delta t$ $[1]$\\				
- 		
     \end{minipage}\\
 	\hline	
 \end{tabular}
@@ -211,6 +213,11 @@
 	$M=J\cdot\alpha=J\cdot\ddot{\varphi}$\\
 	\hline
 \end{tabular}
+
+\subsection{Federn in Serie und Parallel}
+\textbf{Parallel:} $c = c_1 + c_2$ \\
+\textbf{Serie:} $ \frac{1}{c} = \frac{1}{c_1} + \frac{1}{c_2} \longrightarrow
+c = \frac{c_1c_2}{c_1 + c_2}$
 
 \newpage
 
