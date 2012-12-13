@@ -2,3 +2,5 @@
 Ph3SWO.pdf
 *.aux
 tmp/
+/*.log
+/*.out
