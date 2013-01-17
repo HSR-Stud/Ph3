@@ -2,24 +2,27 @@
 
 \subsection{Diverses}
 \begin{tabular}{p{10cm}p{6cm}}
-  \textbf{Wellenlängen der Spektralfarben} & \textbf{Konstanten} \\
-  \begin{tabular}{|l|l|l|l|}
-    \hline
-      Wellenlänge in nm & Farbe & Wellenlänge in nm & Farbe \\
-      \hline
-      380 . . . 435 & violett  & 565 . . . 590 & gelb \\
-      435 . . . 465 & blau     & 590 . . . 630 & orange \\
-      465 . . . 485 & blaugrün & 630 . . . 780 & rot \\
-      485 . . . 565 & grün & & \\
-      \hline
-  \end{tabular}
-  & \textbf{Vakuumgeschwindigkeit:} \newline 
+  %\textbf{Wellenlängen der Spektralfarben} 
+  %&
+   \textbf{Konstanten} \\
+  %\begin{tabular}{|l|l|l|l|}
+   % \hline
+    %  Wellenlänge in nm & Farbe & Wellenlänge in nm & Farbe \\
+     % \hline
+      %380 . . . 435 & violett  & 565 . . . 590 & gelb \\
+      %435 . . . 465 & blau     & 590 . . . 630 & orange \\
+      %465 . . . 485 & blaugrün & 630 . . . 780 & rot \\
+      %485 . . . 565 & grün & & \\
+      %\hline
+  %\end{tabular}
+  %&
+   \textbf{Vakuumgeschwindigkeit:} \newline 
   $c=299'792'458 \frac{m}{s} \approx 3 \cdot 10^8 \frac{m}{s}$ \\
 \end{tabular}
 
 \subsection{Geometrische Optik \kuchling{360} \stoecker{309}}
 \renewcommand{\arraystretch}{2}
-\begin{tabular}{|p{3.5cm}|p{8.5cm}|p{6cm}|}
+\begin{tabular}{|p{2.5cm}|p{9.5cm}|p{6cm}|}
   \hline
   \begin{minipage}[]{3.5cm}
     Brechungsgesetz\\
@@ -29,7 +32,7 @@
   \sin \varepsilon_1 = n_2 \sin \varepsilon_2 \qquad \varepsilon_1=\varepsilon_1'$ &
   \begin{minipage}[c]{5cm}
     \vspace{0.1cm}
-    \includegraphics[width=4cm]{./bilder/Brechung.png}
+    \includegraphics[width=3cm]{./bilder/Brechung.png}
   \end{minipage}\\
   \hline
   \begin{minipage}[]{3.5cm}
@@ -60,14 +63,15 @@
     Totalreflexion\\
     \kuchling{366} \stoecker{322}\\
   \end{minipage} &
-  $\varepsilon = \arcsin \dfrac{n_1}{n_2} \quad$
+  \parbox{2.5cm}{Für $n_1 > n_2$\\ \\
+  $\varepsilon = \arcsin \dfrac{n_2}{n_1} \quad$}
   \begin{minipage}[]{6cm}
     $\varepsilon=\varepsilon_g \Rightarrow$ Grenzfall (ausgezogene Linie)
     $\varepsilon<\varepsilon_g \Rightarrow$ Brechung (gepunktete Linie)
     $\varepsilon>\varepsilon_g \Rightarrow$ Reflexion (gestrichelte Linie)     	
   \end{minipage} &
-  \begin{minipage}[]{4cm}
-    \includegraphics[width=3.5cm]{./bilder/Totalreflexion.png}
+  \begin{minipage}[c][2.3cm]{4cm}
+    \includegraphics[height=2.2cm]{./bilder/Totalreflexion.png}
   \end{minipage}\\
   \hline
   \begin{minipage}[]{3.5cm}
@@ -87,8 +91,41 @@
   \end{minipage}\\
   \hline
   \begin{minipage}[]{3.5cm}
+      \vspace{0.2cm}
+      Brechkraft,\\
+      Linsenschleifer-gleichung\\
+  		\kuchling{370}\\
+    \end{minipage} & 
+    \begin{minipage}{9.5cm}
+    $D=\dfrac{1}{f}=\left(\dfrac{n_2}{n_1}-1\right)\left(\dfrac{1}{r_1}+
+    \dfrac{1}{r_2}\right) \qquad \underbrace{D_{tot} = D_1 + D_2}_{\text{Abstand von Linsen}\ll f} $ \\
+    \parbox{2.6cm}{$\frac{1}{r_1} ; \frac{1}{r_2} = 0$: Plan }
+    \parbox{4cm}{
+    $r_1, r_2>0$: Konvex\\
+    $r_1, r_2<0$: Konkav\\
+    }
+    \end{minipage}
+    &
+  	\begin{minipage}[]{6cm}
+  		D = Dioptrien [dpt] \quad $1dpt=1m^{-1}$ \\
+  		$n_1$ = B.index d. umgebenden Mediums \\
+  		$n_2$ = B.index der Linse  
+  	\end{minipage} \\
+  	\hline
+  	Brillengleichung & $D_B = D'_{min} - D_{min} = 
+  	\frac{1}{g'_{min}} -\frac{1}{g_{min}}$ 
+  	& 
+  	\begin{minipage}[]{6cm}
+  	\vspace{0.1cm}
+  	 $D_B$: Dioptrien der Brille \\
+  	 $g'_{min}$:neue Entfernung zum Scharf sehen\\
+  	 $g_{min}$: alte Entfernung zum Scharf sehen \\
+  	 \vspace{0.1cm}
+  	\end{minipage} \\
+  	\hline
+  \begin{minipage}[]{3.5cm}
     \vspace{2.7cm}
-    Abbildungsgleichungen\\
+    Abbildungs-gleichungen\\
     \kuchling{363} \stoecker{373}\\
   \end{minipage} &
   \begin{minipage}[c]{3cm}
@@ -107,73 +144,57 @@
     $\alpha$ = Vergösserungsfaktor \\
     $\alpha < 1$ = verkl., $\alpha > 1$ = vergr.\\
   \end{minipage}
-  \begin{minipage}[]{8.5cm}
+  \begin{minipage}[]{9.5cm}
     \underline{Vorzeichenkonventionen}\\
-    - Spiegel konkav bzw. Linse konvex $\quad \Rightarrow \quad f>0$\\
-    - Spiegel konvex bzw. Linse konkav $\quad \Rightarrow \quad f<0$\\
-    - Bild virtuell $\quad \Rightarrow \quad b<0 \quad\& \quad  B<0$\\
-    - Gegenstand virtuell $\quad \Rightarrow \quad g<0 \quad \& \quad G<0$\\
+    -Spiegel konkav / Linse konvex (sammelnd) $\quad \Rightarrow \quad f>0$\\
+    -Spiegel konvex / Linse konkav (zerstreuend)$\quad \Rightarrow \quad f<0$\\
+    -Bild virtuell $\quad \Rightarrow \quad b<0 \quad\& \quad  B<0$\\
+    -Gegenstand virtuell $\quad \Rightarrow \quad g<0 \quad \& \quad G<0$\\
   \end{minipage}&
   \begin{minipage}[]{6cm}
     \includegraphics[width=6cm]{./bilder/Abbildungsgleichungen.png}
+  \end{minipage}
+  
+  \begin{minipage}{6cm}
+  	\vspace{1cm}
+  	Bei reelem Gegenstand:\\
+  	-$B > 0$: invertiertes Bild\\
+  	-$B < 0$: aufrecht, seitenrichtig
   \end{minipage}\\
   \hline
-  \begin{minipage}[]{3.5cm}
-    \vspace{0.2cm}
-    Brechkraft,\\
-    Linsenschleifergleichung\\
-		\kuchling{370}\\
-  \end{minipage} & 
-  $D=\dfrac{1}{f}=\left(\dfrac{n_2}{n_1}-1\right)\left(\dfrac{1}{r_1}+
-  \dfrac{1}{r_2}\right) \qquad D_{tot} = D_1 + D_2$ &
-	\begin{minipage}[]{6cm}
-		D = Dioptrien [dpt] \quad $1dpt=1m^{-1}$ \\
-		$n_1$ = B.index d. umgebenden Mediums \\
-		$n_2$ = B.index der Linse  
-	\end{minipage} \\
-	\hline
-	Brillengleichung & $D_B = D'_{min} - D_{min} = 
-	\frac{1}{g'_{min}} -\frac{1}{g_{min}}$ 
-	& 
-	\begin{minipage}[]{6cm}
-	\vspace{0.1cm}
-	 $D_B$: Dioptrien der Brille \\
-	 $g'_{min}$:neue Entfernung zum Scharf sehen\\
-	 $g_{min}$: alte Entfernung zum Scharf sehen \\
-	 \vspace{0.1cm}
-	\end{minipage} \\
-	\hline
-\end{tabular}
+ \end{tabular}
 
 \renewcommand{\arraystretch}{1}
 \newpage
 
 \subsection{Spiegel \kuchling{362} \stoecker{315}}
-\begin{minipage}[]{3.5cm}
-  Konkavspiegel\\
-  (Hohlspiegel)
+\begin{minipage}[]{4cm}
+  Sammel-/Konkavspiegel\\
+  (Hohlspiegel)\\
+  $f>0, g>0$
 \end{minipage}
-\begin{minipage}[]{7cm}
+\begin{minipage}[]{6.5cm}
   \includegraphics[width=6cm]{./bilder/Konkavspiegel.png}
 \end{minipage}
 \begin{minipage}[]{8cm}
   \small
   Gegenstand ausserhalb der Brennweite \\
-  $\Rightarrow$ reelles, verkleinerte \& verkehrtes Bild \\ \\
+  $\Rightarrow$ reelles, verkleinertes \& verkehrtes Bild $(b>0)$\\ \\
   Gegenstand innerhalb der Brennweite \\
-  $\Rightarrow$ virtuelles, vergrössertes \& aufrechtes Bild
+  $\Rightarrow$ virtuelles, vergrössertes \& aufrechtes Bild $(b<0)$
 \end{minipage}
 
 \begin{minipage}[]{3.5cm}
-  Konvexspiegel\\
+  Streu-/Konvexspiegel\\
   (Wölbspiegel)
+  $f<0, g>0$
 \end{minipage}
 \begin{minipage}[]{7cm}
   \includegraphics[width=3cm]{./bilder/Konvexspiegel.png}
 \end{minipage}
 \begin{minipage}[]{8cm}
   \small
-  Gegenstand hat stets virtuelles, verkleinertes \& aufrechtes Bild
+  Gegenstand hat stets virtuelles, verkleinertes \& aufrechtes Bild $(b<0)$
 \end{minipage}
 
 \begin{minipage}[]{3.5cm}
@@ -185,12 +206,13 @@
 \begin{minipage}[]{8cm}
   \small
   Bild ist virtuell und gleich gross wie Gegenstand, Bildweite ist gleich
-  Gegenstandsweite. Brennpunkt liegt im Unendlichen.
+  Gegenstandsweite. Brennpunkt liegt im Unendlichen. $(b<0)$
 \end{minipage}
 
 \subsection{Linsen \kuchling{369} \stoecker{331}}
 \begin{minipage}[]{3.5cm}
-  Sammellinsen
+  Sammel-/Konvexlinsen\\
+  $f>0,g>0$
 \end{minipage}
 \begin{minipage}[]{2cm}
   \includegraphics[width=2cm]{./bilder/sammelprinzip.png}
@@ -201,13 +223,14 @@
 \begin{minipage}[]{7.5cm}
   \small
   Gegenstand ausserhalb der Brennweite \\
-  $\Rightarrow$ reelles, verkehrtes Bild \\ \\
+  $\Rightarrow$ reelles, verkleinertes \& verkehrtes Bild $(b>0)$\\ \\
   Gegenstand innerhalb der Brennweite \\
-  $\quad \Rightarrow$ virtuelles, verkleinertes \& aufrechtes Bild
+  $\quad \Rightarrow$ virtuelles, vergrössertes \& aufrechtes Bild $(b<0)$
 \end{minipage}
 
 \begin{minipage}[]{3.5cm}
-  Zerstreuungslinsen
+  Konkav-/Zerstreuungslinsen\\
+  $f<0,g>0$
 \end{minipage}
 \begin{minipage}[]{2cm}
   \includegraphics[width=2cm]{./bilder/streuprinzip.png}
@@ -217,7 +240,7 @@
 \end{minipage}
 \begin{minipage}[]{7.5cm}
   \small
-  Gegenstand hat stets virtuelles, aufrechtes \& verkleinertes Bild
+  Gegenstand hat stets virtuelles, aufrechtes \& verkleinertes Bild $(b<0)$
 \end{minipage}
 
 \subsection{Abbildungsfehler}
@@ -242,17 +265,21 @@
     Erzeugt reelles, verkleinertes \& umgekehrtes Bild \\
     \\
     $g \;$ Schärfentiefe\\
-    $g_0 \;$ Eingestellte Entfernung (zum Gegenstand)\\
+    $g_0 \;$ Mittlere Gegenstandsweite\\
     $Z \;$ Blendenzahl \\
     $E \;$ Belichtung \\
-    $u \;$ Unsch"arfekreisdurchmesser \\
-    $q \;$ Öffnungsverhältnis (Blendenöffnung) \\
-    $d \;$ Objektivdurchmesser \\
+    $u \;$ Unschärfekreisdurchmesser \\
+    $q \;$ Öffnungsverhältnis (Lichtstärke) \\
+    $d \;$ Blenden-Durchmesser \\
     $f \;$ Brennweite (z.B. 35mm-Objektiv)} &
   \parbox{8cm}{
-    \fbox{$\dfrac{1}{g}=\dfrac{1}{g_0}\pm\dfrac{u}{q\,f^2}$} \\
+    \fbox{$\dfrac{1}{g_{_{min/max}}}=\dfrac{1}{g_0}\pm\dfrac{u}{q\,f^2}$} \parbox{4cm}{
+        $+$ für $g_{_{min}}$\\
+        $-$ für $g_{_{max}}$} 
+        \\
     $B=\dfrac{f}{g-f}G$ \qquad bzw. f"ur $g\gg f\quad B=\dfrac{f}{g}G$\\
-    $Z = \dfrac{f}{d} = \dfrac1q$ \qquad $q = \dfrac{d}{f} = \dfrac1Z$\\
+    $Z = \dfrac{f}{d} = \dfrac1q$ \qquad $q = \dfrac{d}{f} = \dfrac1Z$ 
+    \\
     $E\sim q^2\,t$ \\
     Kleine Blende ($Z=16, \,q=1:16$)\\ 
     $\Rightarrow$ grosse Tiefensch"arfe\\
@@ -264,12 +291,12 @@
 \begin{tabular}{lll}
   \parbox{7cm}{\includegraphics[width=7cm]{./bilder/lupe.png}} &
   \parbox{11cm}{
+    Bild ist im Unendlichen, wenn $g=f$\\
     Erzeugt virtuelles, vergrössertes \& aufrechtes Bild \\
     \\
-    $V \;$ Vergr"osserung \qquad $s \;$ deutliche Sehweite (Auge: 25cm)\\
-    \qquad $\varepsilon \;$ Sehwinkel mit \qquad $\varepsilon_0 \;$ Sehwinkel
-    ohne Lupe \\
-    \\
+    $V \;$ Vergr"osserung \qquad \qquad $s \;$ deutliche Sehweite (Auge: 25cm)\\
+    \qquad $\varepsilon \;$ Sehwinkel mit Lupe \qquad $\varepsilon' = \varepsilon_0 \;$ Sehwinkel
+    ohne Lupe = $1/60^\circ$\\
     $V=\dfrac{s}{f}=\dfrac{\tan(\varepsilon)}{\tan(\varepsilon_0)}\Rightarrow\dfrac{s}{g}>
     V_{\text{normal}}$ }
 \end{tabular}
