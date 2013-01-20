@@ -16,8 +16,15 @@
  		$A$ = Amplitude $[1]$\\
  		$\omega$ = Kreisfrequenz $[\frac{1}{s}]$\\
  		$v(t)$ = Geschwindigkeit $[\frac{m}{s}]$\\
- 		$a(t)$ = Beschleunigung $[\frac{m}{s^2}]$\\ 
-    \end{minipage}\\
+ 		$a(t)$ = Beschleunigung $[\frac{m}{s^2}]$ 
+     \end{minipage}\\
+    \begin{minipage}[]{4cm} 
+        	Trägheitskraft/Moment
+    \end{minipage}&
+    \begin{minipage}[]{8cm}
+        	Trans. : $F_T(y) = m \cdot \ddot{y} \qquad$
+        	Rot.: $M_T(\varphi) = J \cdot \ddot{\varphi}$
+    \end{minipage} &\\
 	\hline
 	\begin{minipage}[]{4cm}
     	Schwingungsenergie\\
@@ -25,9 +32,9 @@
     \end{minipage} &
 	\begin{minipage}[]{8cm}
     \vspace{0.2cm}
-	$E=E_{\text{pot}}+E_{\text{kin}}=\dfrac{c\,y^2}{2}+\dfrac{m\,v^2}{2}=$\\
-	\\ $\dfrac{m\,\omega^2A^2}{2}(\sin(\omega t+\varphi)+\cos(\omega
-	t+\varphi))=\dfrac{m\,\omega^2\,A^2}{2}$\\
+	$E=E_{\text{pot}}+E_{\text{kin}}=\dfrac{c\,y^2}{2}+\dfrac{m\,v^2}{2}= \dfrac{c}{2}\cdot A$\\
+	\\ $\dfrac{m\,\omega^2A^2}{2}(\sin(\omega t+\varphi)^2+\cos(\omega
+	t+\varphi)^2)=\dfrac{m\,\omega^2\,A^2}{2}$\\
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
 		$E$ = Energie $[J]\\$
@@ -43,8 +50,8 @@
     	\underline{ohne Federmasse:}\\
 		$m\ddot{y}+c\,y=0 \qquad \omega_0=\sqrt{\dfrac{c}{m}} = \sqrt{\dfrac{c_1 +
 		c_2}{m_1 + m_2}}$ \\ $T=2\pi \sqrt{\dfrac{m}{c}}$\\ \\
-		rücktr. Kraft: $F=-cy=m\,\ddot{y}$ \\ \\
-		\underline{mit Federmasse:}\\ \\
+		rücktr. Kraft: $F=-cy=m\,\ddot{y} = F_T$ \\ \\
+		\underline{mit Federmasse:}\\
 		$\omega_0=\sqrt{\dfrac{c}{m+\frac{m_F}{3}}} \qquad
 		T=2\pi\sqrt{\dfrac{m+\frac{m_F}{3}}{c}}$\\ 
 		\end{minipage} &
@@ -58,13 +65,13 @@
     	\kuchling{199} \stoecker{245}\\
     \end{minipage} &
 	\begin{minipage}[]{8cm}
-	$J\ddot{\varphi}+c\varphi=0 \qquad \omega_0=\sqrt{\dfrac{c}{J}} \qquad
-	T=2\pi\sqrt{\dfrac{J}{c}}$\\ \\
-	rücktr. Drehm.:	$M=-c\,\varphi=J\,\ddot{\varphi}$ (Bewegung)\\
+	$J\ddot{\varphi}+c_{_D}\varphi=0 \qquad \omega_0=\sqrt{\dfrac{c_{_D}}{J}} \qquad
+	T=2\pi\sqrt{\dfrac{J}{c_{_D}}}$\\ \\
+	rücktr. Drehm.:	$M=-c_{_D}\,\varphi=J\,\ddot{\varphi}$ (Bewegung)\\
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
     	\vspace{0.1cm}
-		\includegraphics[width=3.5cm]{./bilder/Drehpendel.png}\\	
+		\includegraphics[width=3.5cm]{./bilder/Drehpendel.png}	
     \end{minipage}\\
 	\hline
 	\begin{minipage}[]{4cm}
@@ -73,14 +80,14 @@
     	\kuchling{200} \stoecker{240}\\
     \end{minipage} &
 	\begin{minipage}[]{8cm}
-	$l\ddot{\varphi}+g\sin(\varphi)=0\quad\xrightarrow{\text{lin.}}\quad
+	$l\ddot{\varphi}+g\sin(\varphi)=0\quad\xrightarrow{\text{lin.} (\varphi \ll 1)}\quad
 	l\ddot{\varphi}+g\varphi=0$\\ \\
 	$\omega_0=\sqrt{\dfrac{g}{l}} \qquad T=2\pi\sqrt{\dfrac{l}{g}} \qquad
 	v=l\dot{\varphi} \qquad a=l\ddot{\varphi}$\\
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
     	\vspace{0.1cm}
-		\includegraphics[width=2.5cm]{./bilder/mathe_pendel.png}\\	
+		\includegraphics[width=2cm]{./bilder/mathe_pendel.png}	
     \end{minipage}\\
 	\hline
 	\begin{minipage}[]{4cm}
@@ -95,14 +102,22 @@
 	J_A\ddot{\varphi}+m\,g\,a\,\varphi=0$\\ \\
 	$\omega_0 = \sqrt{\dfrac{m\,g\,a}{J_A}}=\sqrt{\dfrac{g}{l^{*}}} \qquad
 	T=2\pi\sqrt{\dfrac{J_A}{m\,g\,a}}=2\pi\sqrt{\dfrac{l^*}{g}}$\\ \\
-	$l^{*}=\dfrac{J_A}{m\,a}=\dfrac{J_M}{m\,x}$\\ \\
+	$l^{*}=\dfrac{J_A}{m\,a}=\dfrac{J_M}{m\,x} = \dfrac{J_{S}}{m\cdot a}+a$\\ 
+	bei mehreren Elementen: \parbox{3cm}{
+			$J_A = \sum J_{A_i}$\\
+				 $m = \sum m_i$}\\ \\
 	$J_A=J_S+m\,a^2 \qquad J_M=J_S+m\,x^2$\\ \\
-	\underline{Perkussionszentrum}\\
+	\textbf{Perkussionszentrum}\\
 	Trifft ein Schlag den Schwingungsmittelpunkt $M$ wirken keine Kräfte auf den
-	Punkt $A$.\\
+	Punkt $A$ \& umgekehrt\\
+	\textbf{Minimale Schwingungsdauer}\\
+	$l_{min}^* = 2\sqrt{\dfrac{J_S}{m}}$ wenn $a=x=a_{min}$
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
 		\includegraphics[width=6cm]{./bilder/physpendel.png}\\	
+		\vspace{0.2cm}
+		$\l^*$ = reduzierte Pendellänge\\
+		$\l_A^* = l_M^*$
     \end{minipage}\\
 	\hline
 	\begin{minipage}[]{4cm}
@@ -116,13 +131,11 @@
     	\vspace{0.2cm}
 		$\vec{R}$ = Ortsvektor des Schwerpunkts\\
 		$\vec{r_i}$ = Koordinate des $i$-ten Elements\\
-		$\Delta m_i$ = Masse des $i$-ten Elements\\
-		$m$ = Gesamtmasse\\
+		$\Delta m_i$ = Masse des $i$-ten Elements
     \end{minipage}\\
 	\hline	
 \end{tabular}
 \renewcommand{\arraystretch}{1}
-\newpage
 
 \subsection{Gedämpfte Schwingungen}
 \renewcommand{\arraystretch}{2}
@@ -134,11 +147,12 @@
     \end{minipage} &
 	\begin{minipage}[]{8cm}
     	\vspace{0.2cm}
-		$m\ddot{y}+cy+F_R=0 \qquad \Delta A=4\dfrac{F_R}{c} \qquad F_R=\mu\,F_N$\\
+		$m\ddot{y}+cy+F_R=0 \qquad F_R=\mu\,F_N \qquad \Delta A=4\dfrac{F_R}{c} $\\
+		Masse bleibt stehen, wenn $c\cdot A_n < F_R$
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
         \vspace{0.2cm}
- 		$\Delta A$ = Amplitude pro Periode $[m]$\\
+ 		$\Delta A$ = Abnahme von $A$ pro Periode $[m]$\\
  		$F_R$ = Reibkraft $[N]$\\
  		$c$ = Federkonstante $[\frac{N}{m}]$\\ 
     \end{minipage}\\
@@ -152,30 +166,33 @@
 	    \underline{$D<1$: Schwingfall}\\
 		$m\,\ddot{y}+b\,\dot{y}+c\,y=\ddot{y}+\underbrace{\dfrac{b}{m}}_{2\delta}
 		\cdot\dot{y}+\underbrace{\dfrac{c}{m}}_{\omega_0^{\,2}}\cdot y=0$\\
+		$\qquad F_d=-b\dot y$\\ \\
 		Ansatz abklingende Schwingung: \\
 		$y(t)=A e^{-\delta t}\sin(\omega_d t+\varphi_0)$\\ \\
+		$\delta=\dfrac{b}{2m}$\\
 		$\omega_0=\sqrt{\dfrac{c}{m}}$ \\ 
-		$\omega_d =	\sqrt{\dfrac{c}{m}-\delta^2}=\omega_0 \sqrt{1-D^2} =
+		$\omega_d =	\omega_0 \sqrt{1-D^2} = \sqrt{\dfrac{c}{m}-\delta^2}=
 		\sqrt{\omega_0^2 - \delta^2}$\\
 		\\
 		$\omega_r=\omega_0\sqrt{1-2\cdot D^2}$\\ \\
-		$D=\dfrac{\delta}{\omega_0}=\dfrac{\frac{\Lambda}{2\pi}}{\sqrt{1+\left(\frac{\Lambda}{2\pi}\right)^2}}
-		\qquad \delta=\dfrac{b}{2m} \qquad F_d=-b\dot y$\\
+		$D=\dfrac{\delta}{\omega_0}=\dfrac{\frac{\Lambda}{2\pi}}{\sqrt{1+\left(\frac{\Lambda}{2\pi}\right)^2}} \approx \dfrac{\Lambda}{2\pi}$ (für kleine $D$)\\
 		$\Lambda=\delta T=\dfrac{2\pi D}{\sqrt{1-D^2}}=\ln{\dfrac{\hat
-		A_n}{\hat A_{n+T}}}\qquad\dfrac{\hat A_n}{\hat A_{n+T}}=e^{\delta T}$\\ \\ \\
+		A_n}{\hat A_{n+1}}}\qquad\dfrac{\hat A_n}{\hat A_{n+1}}=e^{\delta T}$\\ 
+		$\dfrac{A_{n+1}}{A_n} = \sqrt[\mathlarger{\mathlarger{k}}]{\dfrac{A_{n+k}}{A_n}}$\\ \\
 		$\dfrac{E_t}{E_{t+\Delta t}}=\dfrac{A_t^2}{A_{t+\Delta t}^2} \qquad
 		\dfrac{A_t}{A_{t+\Delta t}}= e^{\delta \Delta t} $\\ \\ \\
 		\underline{$D>1$: Kriechfall (keine Schwingung mehr)}\\ \\
 		$y(t)=b_1 e^{\lambda_1 t}+b_2e^{\lambda_2 t}$\\ \\
 		$\lambda_1=-\omega_0(D+\sqrt{D^2-1})\quad\lambda_2=-\omega_0(D-\sqrt{D^2-1})$\\ \\
-		\underline{$D=1$: Aperiodischer Grenzfall}\\ \\
+		\underline{$D=1$: Aperiodischer Grenzfall ($\delta = \omega_0$)}\\ \\
 		$y=(b_1+b_2 t)\,e^{-\delta t} \qquad
 		\omega_0^2=\dfrac{c}{m}=\dfrac{b^2}{4m^2}=\delta^2$\\
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
- 		$m$ = Masse $[kg]$\\
+ 		$m$ = Mitschwingende Masse $[kg]$\\
  		$b$ = Dämpfungskonstante $[\frac{kg}{s}]$\\
- 		$c$ = Federkonstante $[\frac{N}{m}]$\\ \\
+ 		$c$ = Federkonstante $[\frac{N}{m}]$\\
+ 		$F_d$ = Geschwindigkeits-proportionale Dämpfungskraft\\ \\
  		$\omega_0$ = Eigen-Kreisfr. $[\frac{1}{s}]$\\
  		$\omega_d$ = gedämpfte Kreisfr. $[\frac{1}{s}]$\\
  		$\omega_r$ = Resonanzkreisfrequenz $[\frac{1}{s}]$\\ \\ 				
@@ -185,18 +202,20 @@
  		$E$ = Energie $[J]$\\ \\
  		$\delta$ = Abklingkostante $[1/s]$\\
  		$D$ = Dämpfungsgrad $[1]$\\
-		$F_d$ = Geschwindigkeits-proportionale Dämpfungskraft\\
+		
  		$\Lambda$ = logartihmisches Dekrement $[1]$\\ \\
  		$\hat A_n$ = $A_{max}$ zu Zeitpunkt $t_n$ $[1]$\\
-  		$\hat A_{n+T}$ = $A_{max}$ zu Zeitpunkt $t_n+T$ $[1]$\\
+  		$\hat A_{n+1}$ = $A_{max}$ zu Zeitpunkt $t_n+T$ $[1]$\\
   		$E_t$ = $E$ zu Zeitpunkt $t$ $[J]$\\
   		$E_{t+\Delta t}$ = $E$ zu Zeitpunkt $t+\Delta t$ $[J]$\\
   		$A_t$ = $A$ zu Zeitpunkt $t$ $[1]$\\
-  		$A_{t+\Delta t}$ = $A$ zu Zeitpunkt $t+\Delta t$ $[1]$\\				
+  		$A_{t+\Delta t}$ = $A$ zu Zeitpunkt $t+\Delta t$ $[1]$\\	\\ \\ \\ \\ \\ \\
+  		$b_1$ \& $b_2$ durch Anfangsbedingungen			
     \end{minipage}\\
 	\hline	
 \end{tabular}
 
+\begin{multicols}{2}
 \subsection{Diverse Formeln}
 \begin{tabular}{|l|l||l|}
 	\hline
@@ -218,7 +237,7 @@
 \textbf{Parallel:} $c = c_1 + c_2$ \\
 \textbf{Serie:} $ \frac{1}{c} = \frac{1}{c_1} + \frac{1}{c_2} \longrightarrow
 c = \frac{c_1c_2}{c_1 + c_2}$
-
+\end{multicols}
 \newpage
 
 \subsection{Fremderregte Schwingungen \kuchling{213} \stoecker{254}}
@@ -260,15 +279,18 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
     	Resonanzkreisfrequenz
     		& $\omega_r=\omega_0\sqrt{1-2D^2}$\quad $\omega_r<\omega_d<\omega_0$\\
     	Resonanzamplitude
-    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}}$\\
+    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}} = \dfrac{c \cdot u_0}{2m\sqrt{(\delta \omega_0)^2 - \delta^4}}$\\
     	Vergrösserungsfunktion
     		&
     		$V=\dfrac{1}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}=\dfrac{A(\omega)}{u_0}$ \\ 
-    	\multicolumn{2}{l}{\small
-    	Überkritische Dämfpung, wenn $D > \frac12 \sqrt2 \Rightarrow$ Keine
-    	Resonanz mehr \&} \\
-    	\multicolumn{2}{l}{\small Amplitude bleibt stets unter statischer
-    	Auslenkung}
+    	Vergrösserung bei Resonanz
+    		&
+    		$V_r = \dfrac{1}{\sqrt{1-\eta_r^4}}$ mit $\eta_r = \sqrt{1-2D^2}$\\
+    	\multicolumn{2}{l}{\parbox{12cm}{\small
+    	Überkritische Dämfpung, wenn $D > \frac{1}{\sqrt2} \Rightarrow$ Auch bei 
+    	Resonanz\\
+    	bleibt Amplitude stets unter statischer
+    	Auslenkung ($V \leq 1$)}}
 		\end{tabular}
     \end{minipage} \\
 \hline
@@ -340,7 +362,7 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
     		\textcolor{blue}{$m\,\omega^2\,u_0\,\sin(\omega t)$} \\
     	Amplitude
     		&
-    		$A=\dfrac{\omega^2\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
+    		$A=\dfrac{\omega^2\,u_0}{\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
     	Phase zw. $\omega_0$ \& $\omega$
     		&
     		$\varphi=\arctan\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)-\pi$\\ 
@@ -358,6 +380,7 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
 	\includegraphics[width=6cm]{./bilder/unwuchterregung.png}\\ \\
 	$m_R$ Rotormasse (bewegt)\\
 	$e$ Exzentrizit"at (Distanz Achse$\leftrightarrow$SP) \\
+	$F_0$ Kraft auf Fundament ohne Federung\\
 	$F_{B0}$ verringerte Kraft}
 	& \begin{minipage}[]{12cm}
       \renewcommand{\arraystretch}{2}
@@ -377,9 +400,9 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
     		& $\omega_r=\dfrac{\omega_0}{\sqrt{1-2D^2}}$\\
     	Resonanzamplitude
     		& $A_r=\dfrac{m_R}{m}\dfrac{e}{2D\sqrt{1-D^2}}$\\
-    	F auf Fundament ohne Fed.
-    		& $F = m_R\,e\,\omega^2 \sin(\omega t)$\\
-		Kraftamplitude der Masch.
+    	Kraftamplitude \textbf{ohne} Fed.
+    		& $F_0 = m_R\,e\,\omega^2 \sin(\omega t)$\\
+		Kraftamplitude \textbf{mit} Fed.
     		&
     		$F_{B0}=\dfrac{m_R\,e\,\omega^2\,\sqrt{1+4D^2\eta^2}}{\sqrt{(1-\eta^2)^2+4D^2\eta^2}}=F(\eta)$ \\ 
     	Verhältnis
