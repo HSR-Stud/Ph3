@@ -20,6 +20,8 @@
   $c=299'792'458 \frac{m}{s} \approx 3 \cdot 10^8 \frac{m}{s}$ \\
 \end{tabular}
 
+%TODO Objekte im Strahlengang
+
 \subsection{Geometrische Optik \kuchling{360} \stoecker{309}}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}{|p{2.5cm}|p{9.5cm}|p{6cm}|}
@@ -243,20 +245,40 @@
   Gegenstand hat stets virtuelles, aufrechtes \& verkleinertes Bild $(b<0)$
 \end{minipage}
 
-\subsection{Abbildungsfehler}
-\begin{tabular}{ll}
-  Sph"arische Abberation & Brennweite ist Funktion des Abstands zur optischen
-  Achse \\
-  Koma & beim schiefen Einfall ($\rightarrow$ Schweiff"ormiger Fehler) \\
-  Astigmatismus, Bildfeldw"olbung & vertikal und horizontal $\rightarrow$ andere
-  Brennweite (Auge) \\
-  Verzeichnung & tonnen- oder kissenf"ormige Verzeichnung eines Quadrates
-  ($\rightarrow$ Photogrammetrie) \\
-  Chromatische Abberation & wegen Dispersion $\Rightarrow$ Brennweite ist
-  Funktion von $\lambda$ (Farbe) \\
-\end{tabular}
+\subsection{Strahlengänge}
+	\begin{tabular}{lll}
+		\multirow{2}{3.2cm}{
+		  \parbox{3cm}{
+		      	\includegraphics[width=3cm]{./bilder/strahlengang_legende.png}}}
+		&
+		\parbox{7cm}{
+				\includegraphics[width=6.6cm]{./bilder/strahlengang_sammelspiegel.png}}
+		& 
+		\parbox{7cm}{
+				\includegraphics[width=6.6cm]{./bilder/strahlengang_streuspiegel.png}}\\
+		&
+		\parbox{7cm}{
+				\includegraphics[width=6.6cm]{./bilder/strahlengang_sammellinse.png}}
+		& 
+		\parbox{7cm}{
+				 \includegraphics[width=6.6cm]{./bilder/strahlengang_streulinse.png}}\\
+	\end{tabular}
 
 \subsection{Optische Systeme}
+\subsubsection{Lupe \kuchling{381} \stoecker{345}}
+\begin{tabular}{lll}
+  \parbox{7cm}{\includegraphics[width=7cm]{./bilder/lupe.png}} &
+  \parbox{11cm}{
+    Bild ist im Unendlichen, wenn $g=f$\\
+    Erzeugt virtuelles, vergrössertes \& aufrechtes Bild \\
+    \\
+    $V \;$ Vergr"osserung \qquad \qquad $s \;$ deutliche Sehweite (Auge: 25cm)\\
+    \qquad $\varepsilon \;$ Sehwinkel mit Lupe \qquad $\varepsilon' = \varepsilon_0 \;$ Sehwinkel
+    ohne Lupe = $1/60^\circ$\\
+    $V=\dfrac{s}{f}=\dfrac{\tan(\varepsilon)}{\tan(\varepsilon_0)}\Rightarrow\dfrac{s}{g}>
+    V_{\text{normal}}$ }
+\end{tabular}
+
 \subsubsection{Kamera \kuchling{378} \stoecker{343}}
 \begin{tabular}{lll}
   \parbox{3cm}{
@@ -287,53 +309,43 @@
     $\Rightarrow$ viel Licht, kleine Tiefensch"arfe} \\
 \end{tabular}
 
-\subsubsection{Lupe \kuchling{381} \stoecker{345}}
-\begin{tabular}{lll}
-  \parbox{7cm}{\includegraphics[width=7cm]{./bilder/lupe.png}} &
-  \parbox{11cm}{
-    Bild ist im Unendlichen, wenn $g=f$\\
-    Erzeugt virtuelles, vergrössertes \& aufrechtes Bild \\
-    \\
-    $V \;$ Vergr"osserung \qquad \qquad $s \;$ deutliche Sehweite (Auge: 25cm)\\
-    \qquad $\varepsilon \;$ Sehwinkel mit Lupe \qquad $\varepsilon' = \varepsilon_0 \;$ Sehwinkel
-    ohne Lupe = $1/60^\circ$\\
-    $V=\dfrac{s}{f}=\dfrac{\tan(\varepsilon)}{\tan(\varepsilon_0)}\Rightarrow\dfrac{s}{g}>
-    V_{\text{normal}}$ }
-\end{tabular}
+
+
+\begin{minipage}{12cm}
 \subsubsection{Projektor \kuchling{377}}
 \begin{tabular}{ll}
-\parbox{6cm}{
-  \includegraphics[width=6cm]{./bilder/projektor.png}} &
-\parbox{12cm}{
+\parbox{4cm}{
+  \includegraphics[width=4cm]{./bilder/projektor.png}} &
+\parbox{6.5cm}{
   Erzeugt reelles, vergrössertes \& umgekehrtes Bild \\
-  \\
-  $\beta \;$ Abbildungsmasstab \\
-  $\beta = \dfrac{b}{g} = \dfrac{b}{f}-1$}
+  $\beta = \dfrac{b}{g} = \dfrac{b}{f}-1$ mit $\beta \;$ Abbildungsmasstab}
 \end{tabular}
-
-\subsubsection{Mikroprojektor} 
-Erzeugt reelles Bild auf Schirm mit $V=\dfrac{B}{G}=\dfrac{b}{g}$\\
+\end{minipage}
+\begin{minipage}{6cm}
+	\subsubsection{Mikroprojektor} 
+		Erzeugt reelles Bild auf Schirm mit \[V=\dfrac{B}{G}=\dfrac{b}{g}\]
+\end{minipage}
 
 \subsubsection{Mikroskop \kuchling{382} \stoecker{345}}
 \begin{tabular}{ll}
   \parbox{8cm}{
-    \includegraphics[width=8cm]{./bilder/mikroskop.png}} &
+    \includegraphics[width=7cm]{./bilder/mikroskop.png}} &
   \parbox{10cm}{
     Erzeugt reelles, vergrössertes \& umgekehrtes Bild. \\
-    \\
+    \hspace*{1cm}\parbox{9cm}{
     $V_1 = \frac{\Delta}{f_1} \;$ Vergrösserung des Objektivs\\
     $V_2 = \frac{s}{f_2} \;$ Vergrösserung des Okulars \\
     \\
-    $\Delta = \overline{f_1\,f_2} \;$ Tubuslänge \\
+    $\Delta = \overline{F_1\,F_2} = b_1 - f_1 \;$ Tubuslänge \\
     $V=V_1\,V_2= \dfrac{f_1}{f_2} = \dfrac{\Delta}{f_1} \dfrac{s}{f_2} =
-    \dfrac{B}{G} \, \dfrac{s}{f_2}$ }
+    \dfrac{B}{G} \, \dfrac{s}{f_2}$ }}
 \end{tabular}
 
 \subsubsection{Keplersches (Astronomisches) Fernrohr \kuchling{383} \stoecker{347}}
 \begin{tabular}{ll}
-  \parbox{11cm}{
+  \parbox{10cm}{
     \includegraphics[width=10cm]{./bilder/astron.png}} &
-  \parbox{7cm}{
+  \parbox{8cm}{
     Erzeugt reelles, vergrössertes \& umgekehrtes Bild. Dies ist ein Spezialfall
     des Mikroskops, wo die \textbf{Gegenstandsweite} auf \textbf{unendlich} ($g \rightarrow \infty$) eingestellt ist. \\
     \\
@@ -348,29 +360,43 @@ $V = \dfrac{\tan(\varepsilon)}{\tan(\varepsilon')} = \dfrac{B/f_2}{B/f_1} =
 \dfrac{f_1}{f_2} = \dfrac{D}{d} = \dfrac{f_1+f_2}{a}$ \qquad $l = f_1+f_2$
 \qquad $\dfrac{1}{f_1+f_2} + \dfrac{1}{a} = \dfrac{1}{f_2}$ \qquad
 $a = \frac{l}{V} $ \qquad $d = \frac{D}{V}$ \qquad $L = d^2 = \left( \frac{D}{V}
-\right)^2$
+\right)^2$\\ \\
+Bezeichnung auf Fernrohren, Ferngläser (z.B. 10x50) entspricht $V$x$D$ \\
 
 \subsubsection{Diverse \kuchling{384} \stoecker{347}}
 \begin{tabular}{ll}
   Terrestr. Fernr. & 
-  $V=\left|\dfrac{f_1}{f_2}\right|$ \qquad L"ange: $l=f-|f_2|$ (ent. mit
+  $V=\dfrac{f_1}{|f_2|}$ \qquad L"ange: $l=f_1-|f_2|$ (evt. mit
   Umkehrlinse (ZF), Prismen oder Streul. zur Umkehrung) \\
   Spiegelteleskope &
   Reflexion$\leftrightarrow$Brechung (weniger Lichtv.), k. Dispersion (k. chrom.
-  Abberation), Verzug durch Masse  \\
+ Abberation), Verzug durch Masse  \\
 \end{tabular}
-\begin{multicols}{2}
 
-\subsection{Konstruktion des Strahlengangs}
-\begin{center}
-  \includegraphics[width=9cm]{./bilder/strahlengang.png}
-\end{center}
+\subsection{Abbildungsfehler}
+\begin{tabular}{ll}
+  Sph"arische Abberation & Brennweite ist Funktion des Abstands zur optischen
+  Achse \\
+  Koma & beim schiefen Einfall ($\rightarrow$ Schweiff"ormiger Fehler) \\
+  Astigmatismus, Bildfeldw"olbung & vertikal und horizontal $\rightarrow$ andere
+  Brennweite (Auge) \\
+  Verzeichnung & tonnen- oder kissenf"ormige Verzeichnung eines Quadrates
+  ($\rightarrow$ Photogrammetrie) \\
+  Chromatische Abberation & wegen Dispersion $\Rightarrow$ Brennweite ist
+  Funktion von $\lambda$ (Farbe) \\
+\end{tabular}
 
-\subsection{Strichgitter}
-$\lambda = g \cdot \frac{\sin(\Phi)}{n}$\\
-\\
-$\lambda$ = Wellenlänge des Lichts\\
-g = Abstand der Striche\\
-$\Phi$ = Winkel, bei dem ein Maximum ist\\
-n = das wievielte Maximum es ist\\
-\end{multicols}
+
+%\newpage
+%\begin{multicols}{2}
+
+%TODO Besser positionieren
+
+%\subsection{Strichgitter}
+%$\lambda = g \cdot \frac{\sin(\Phi)}{n}$\\
+%\\
+%$\lambda$ = Wellenlänge des Lichts\\
+%g = Abstand der Striche\\
+%$\Phi$ = Winkel, bei dem ein Maximum ist\\
+%n = das wievielte Maximum es ist\\
+%\end{multicols}
