@@ -1,4 +1,5 @@
-*.synctex*
-Ph3SWO.pdf
-*.aux
-tmp/
+/*.pdf
+/*.aux
+/*.log
+/*.out
+/*.gz
