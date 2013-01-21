@@ -269,7 +269,7 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
 		\begin{tabular}{ll}
     	Differentialgleichung
     		& $m \, \ddot{y} + b \, \dot{y} + c y=$
-    		\textcolor{blue}{$c \, u_0 \, \sin(\omega t)$} \\
+    		\textcolor{blue}{$\underbrace{c\,u_0}_{F_0} \, \sin(\omega t)$} \\
     	Amplitude
     		&
     		$A=\dfrac{c\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
@@ -291,87 +291,6 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
     	Resonanz\\
     	bleibt Amplitude stets unter statischer
     	Auslenkung ($V \leq 1$)}}
-		\end{tabular}
-    \end{minipage} \\
-\hline
-\parbox{6cm}{
-	\textbf{Indirekte Federkrafterregung}\\
-	\includegraphics[width=4cm]{./bilder/indirekte-federkrafterregung.png}}
-	& \begin{minipage}[]{12cm}
-      \renewcommand{\arraystretch}{2}
-		\begin{tabular}{ll}
-    	Differentialgleichung
-    		& $m \, \ddot{y} + b \, \dot{y} + c y=$
-    		\textcolor{blue}{$c_2 \, u_0 \, \sin(\omega t)$} \\
-    	Amplitude
-    		&
-    		$A=\dfrac{c_2}{c} 
-    		\dfrac{c\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
-    	Phase zw. $\omega_0$ \& $\omega$
-    		&
-    		$\varphi=\arctan\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)$\\ 
-    	Resonanzkreisfrequenz
-    		& $\omega_r=\omega_0\sqrt{1-2D^2}$\\
-    	Resonanzamplitude
-    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}}$\\
-    	Vergrösserungsfunktion
-    		&
-    		$V=\dfrac{c_2}{c}\cdot\dfrac{1}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$
-		\end{tabular}
-    \end{minipage} \\
-\hline
-\parbox{6cm}{
-	\textbf{Dämpferregung}\\ \\
-	\includegraphics[width=2cm]{./bilder/daempferregung.png}}
-	& \begin{minipage}[]{12cm}
-      \renewcommand{\arraystretch}{2}
-		\begin{tabular}{ll}
-    	Differentialgleichung
-    		& $m\,\ddot{y}+b\,\dot{y}+c\,y=$
-    		\textcolor{blue}{$b\,\omega\,u_0\,\sin(\omega t+\frac{\pi}{2})$} \\
-    	Amplitude
-    		&
-    		$A=\dfrac{b\,\omega\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
-    	Phase zw. $\omega_0$ \& $\omega$
-    		&
-    		$\varphi=\operatorname{arctan}\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)-\dfrac{\pi}{2}$\\ 
-    	Resonanzkreisfrequenz
-    		& $\omega_r=\omega_0 \quad \rightarrow$\quad max. bei $\eta=1$\\
-    	Resonanzamplitude
-    		& $A_r=u_0\quad\rightarrow\quad V(1)=1$\\
-    	Vergrösserungsfunktion
-    		&
-    		$V=\dfrac{2 \,D\, \eta}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$ 
-		\end{tabular}
-    \end{minipage} \\
-\hline
-\end{tabular}
-\newpage
-\begin{tabular}{|l|l|}
-\hline
-\parbox{6cm}{
-	\textbf{Stützenerregung}\\ \\
-	\includegraphics[width=4cm]{./bilder/stuetzenerregung.png}}
-	& \begin{minipage}[]{12cm}
-      \renewcommand{\arraystretch}{2}
-		\begin{tabular}{ll}
-    	Differentialgleichung
-    		& $m\,\ddot{y}+b\,\dot{y}+c\,y=$
-    		\textcolor{blue}{$c\,u_0\,\sin(\omega t) + b\,\omega\,u_0\,\cos(\omega t)$}
-    		\\ & $m\, \ddot{q} + b\,\dot{q} + c\,q =$
-    		\textcolor{blue}{$m\,\omega^2\,u_0\,\sin(\omega t)$} \\
-    	Amplitude
-    		&
-    		$A=\dfrac{\omega^2\,u_0}{\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
-    	Phase zw. $\omega_0$ \& $\omega$
-    		&
-    		$\varphi=\arctan\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)-\pi$\\ 
-    	Resonanzkreisfrequenz
-    		& $\omega_r=\dfrac{\omega_0}{\sqrt{1-2D^2}}$\\
-    	Resonanzamplitude
-    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}}$\\
-    	Vergrösserungsfunktion
-    		& $V=\dfrac{\eta^2}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$ 
 		\end{tabular}
     \end{minipage} \\
 \hline
@@ -410,130 +329,192 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
 		\end{tabular}
     \end{minipage} \\
 \hline
+\parbox{6cm}{
+	\textbf{Indirekte Federkrafterregung}\\
+	\includegraphics[width=4cm]{./bilder/indirekte-federkrafterregung.png}}
+	& \begin{minipage}[]{12cm}
+      \renewcommand{\arraystretch}{2}
+		\begin{tabular}{ll}
+    	Differentialgleichung
+    		& $m \, \ddot{y} + b \, \dot{y} + c y=$
+    		\textcolor{blue}{$c_2 \, u_0 \, \sin(\omega t)$} \\
+    	Amplitude
+    		&
+    		$A=\dfrac{c_2}{c} 
+    		\dfrac{c\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
+    	Phase zw. $\omega_0$ \& $\omega$
+    		&
+    		$\varphi=\arctan\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)$\\ 
+    	Resonanzkreisfrequenz
+    		& $\omega_r=\omega_0\sqrt{1-2D^2}$\\
+    	Resonanzamplitude
+    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}}$\\
+    	Vergrösserungsfunktion
+    		&
+    		$V=\dfrac{c_2}{c}\cdot\dfrac{1}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$
+		\end{tabular}
+    \end{minipage} \\
+\hline
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|}
+\hline
+\parbox{6cm}{
+	\textbf{Stützenerregung}\\ \\
+	\includegraphics[width=4cm]{./bilder/stuetzenerregung.png}}
+	& \begin{minipage}[]{12cm}
+      \renewcommand{\arraystretch}{2}
+		\begin{tabular}{ll}
+    	Differentialgleichung
+    		& $m\,\ddot{y}+b\,\dot{y}+c\,y=$
+    		\textcolor{blue}{$c\,u_0\,\sin(\omega t) + b\,\omega\,u_0\,\cos(\omega t)$}
+    		\\ & $m\, \ddot{q} + b\,\dot{q} + c\,q =$
+    		\textcolor{blue}{$m\,\omega^2\,u_0\,\sin(\omega t)$} \\
+    	Amplitude
+    		&
+    		$A=\dfrac{\omega^2\,u_0}{\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
+    	Phase zw. $\omega_0$ \& $\omega$
+    		&
+    		$\varphi=\arctan\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)-\pi$\\ 
+    	Resonanzkreisfrequenz
+    		& $\omega_r=\dfrac{\omega_0}{\sqrt{1-2D^2}}$\\
+    	Resonanzamplitude
+    		& $A_r=\dfrac{u_0}{2D\sqrt{1-D^2}}$\\
+    	Vergrösserungsfunktion
+    		& $V=\dfrac{\eta^2}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$ 
+		\end{tabular}
+    \end{minipage} \\
+\hline
+\parbox{6cm}{
+	\textbf{Dämpferregung}\\ \\
+	\includegraphics[width=2cm]{./bilder/daempferregung.png}}
+	& \begin{minipage}[]{12cm}
+      \renewcommand{\arraystretch}{2}
+		\begin{tabular}{ll}
+    	Differentialgleichung
+    		& $m\,\ddot{y}+b\,\dot{y}+c\,y=$
+    		\textcolor{blue}{$b\,\omega\,u_0\,\sin(\omega t+\frac{\pi}{2})$} \\
+    	Amplitude
+    		&
+    		$A=\dfrac{b\,\omega\,u_0}{m\sqrt{(\omega_0^2-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$ \\
+    	Phase zw. $\omega_0$ \& $\omega$
+    		&
+    		$\varphi=\operatorname{arctan}\left(\dfrac{2D\,\omega_0\,\omega}{\omega_0^2-\omega^2}\right)-\dfrac{\pi}{2}$\\ 
+    	Resonanzkreisfrequenz
+    		& $\omega_r=\omega_0 \quad \rightarrow$\quad max. bei $\eta=1$\\
+    	Resonanzamplitude
+    		& $A_r=u_0\quad\rightarrow\quad V(1)=1$\\
+    	Vergrösserungsfunktion
+    		&
+    		$V=\dfrac{2 \,D\, \eta}{\sqrt{(1-\eta^2)^2+(2D\eta)^2}}$ 
+		\end{tabular}
+    \end{minipage} \\
+\hline
 \end{tabular}
 \renewcommand{\arraystretch}{1}
-
-\newpage
-
-\subsection{Schwingkreise}
-\subsubsection{Serienschwingkreis \kuchling{530} \stoecker{253}}
-\renewcommand{\arraystretch}{2}
-\begin{tabular}{|p{4cm}|p{14cm}|}
+%\newpage
+\subsection{Elektrische Schwingkreise \kuchling{530} \stoecker{253}}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|p{4cm}|p{7cm}|p{7cm}|}
+\hline
+& Serienschwingkreis & Parallelschwingkreis\\
 \hline
 Diffgl: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
-$L\ddot{I}+R_S\dot{I}+\dfrac{1}{C}\,I=\omega\,U_0\,\sin(\omega t +
-\dfrac{\pi}{2})$ \qquad $I=I_0\,e^{-\delta t}\,\sin(\omega_d t+\varphi)$\\
-\end{minipage}\\
-\hline
-Amplitude: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$I_0=\dfrac{\omega\,U_0}{L\sqrt{(\omega_0^{\,2}-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$\\
-\end{minipage}\\
-\hline
-Phase: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$\varphi=\arctan{\dfrac{2D\,\omega_0\,\omega}{\omega_0^{\,2}-\omega^2}}-\dfrac{\pi}{2}$\\
-\end{minipage}\\
-\hline
-Resonanzfrequenz: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$\omega_r=\omega_0=\dfrac{1}{\sqrt{LC}}$ \qquad
-$\omega_d=\omega_0\sqrt{1-D^2}=\dfrac{1}{\sqrt{LC}}\,\sqrt{1-\dfrac{R^2C}{4L}}$\\
-\end{minipage}\\
-\hline
-Resonanzamplitude: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$I_{0_r}=\dfrac{U_0}{R_S}$\\
-\end{minipage}\\
-\hline
-Vergr"osserungsfunktion: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$V(\eta)=\dfrac{\eta^2}{\sqrt{(1-\eta^2)^2+(2D\,\eta)^2}}$\qquad Max:
-$V_m=\dfrac{1}{2D\sqrt{1-D^2}}$\\
-\end{minipage}\\
-\hline
-Phasenverschiebung: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$\varphi_U=\arctan\left(\dfrac{2D\,\eta}{1-\eta^2}\right)-\pi$\\
-\end{minipage}\\
-\hline
-D"ampfungsgrad: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$D=\dfrac{R_S}{2}\sqrt{\dfrac{C}{L}}$\\
-\end{minipage}\\
-\hline
-Abklingkonst. : &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$\delta=\dfrac{R_S}{2L}$\\
-\end{minipage}\\
-\hline
-\end{tabular}
-
-\subsubsection{Parallelschwingkreis}
-\begin{tabular}{|p{4cm}|p{14cm}|}
-\hline
-Diffgl: &
-\begin{minipage}[]{14cm}
+$L\ddot{I}+R_S\dot{I}+\dfrac{1}{C}\,I=\omega\,U_0\,\sin(\omega t + \dfrac{\pi}{2})$ \qquad 
+%$I=I_0\,e^{-\delta t}\,\sin(\omega_d t+\varphi)$\\
+\end{minipage} &
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
 $C\ddot{U}+\dfrac{1}{R_P}\dot{U}+\dfrac{1}{L}U=\omega\,I_0\,\sin(\omega
 t+\dfrac{\pi}{2})$\\
-\end{minipage}\\
+\end{minipage}
+\\
 \hline
 Amplitude: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$I_0=\dfrac{\omega\,U_0}{L\sqrt{(\omega_0^{\,2}-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$\\
+\end{minipage} &
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
 $U_0=\dfrac{\omega\,I_0}{C\sqrt{(\omega_0^{\,2}-\omega^2)^2+(2D\,\omega_0\,\omega)^2}}$\\
 \end{minipage}\\
 \hline
 Phase: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$\varphi=\arctan{\dfrac{2D\,\omega_0\,\omega}{\omega_0^{\,2}-\omega^2}}-\dfrac{\pi}{2}$\\
+\end{minipage}&
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
 $\varphi=\arctan{\dfrac{2D\,\omega_0\,\omega}{\omega_0^{\,2}-\omega^2}}-\dfrac{\pi}{2}$\\
 \end{minipage}\\
 \hline
 Resonanzfrequenz: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$\omega_r=\omega_0=\dfrac{1}{\sqrt{LC}}$ \qquad
+$\omega_d=\omega_0\sqrt{1-D^2}
+%=\dfrac{1}{\sqrt{LC}}\,\sqrt{1-\dfrac{R^2C}{4L}}
+$ \end{minipage}
+&
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
 $\omega_r=\omega_0=\dfrac{1}{\sqrt{LC}}$\\
 \end{minipage}\\
 \hline
 Resonanzamplitude: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$I_{0_r}=\dfrac{U_0}{R_S}$\\
+\end{minipage}&
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
 $U_{0_r}=I_0\cdot R_P=\dfrac{\omega^2\,L^2}{R_S}$\\
 \end{minipage}\\
 \hline
 Vergr"osserungsfunktion: &
-\begin{minipage}[]{14cm}
-\vspace{0.2cm}
-$V(\eta)=\dfrac{1}{\sqrt{(1-\eta^2)^2+(2D\,\eta)^2}}$\qquad Max:
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$V(\eta)=\dfrac{\eta^2}{\sqrt{(1-\eta^2)^2+(2D\,\eta)^2}}$\\ Max:
 $V_m=\dfrac{1}{2D\sqrt{1-D^2}}$\\
+\end{minipage} &
+\begin{minipage}[]{7cm}
+\vspace{0.2cm}
+$V(\eta)=\dfrac{1}{\sqrt{(1-\eta^2)^2+(2D\,\eta)^2}}$\\
+Max: $V_m=\dfrac{1}{2D\sqrt{1-D^2}}$\\
 \end{minipage}\\
 \hline
 Phasenverschiebung: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$\varphi_{_U}=\arctan\left(\dfrac{2D\,\eta}{1-\eta^2}\right)-\pi$\\
+\end{minipage} &
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
-$\varphi_I=\arctan\left(\dfrac{2D\,\eta}{1-\eta^2}\right)$\\
+$\varphi_{_I}=\arctan\left(\dfrac{2D\,\eta}{1-\eta^2}\right)$\\
 \end{minipage}\\
 \hline
 D"ampfungsgrad: &
-\begin{minipage}[]{14cm}
+\begin{minipage}[]{7cm}
+\vspace{0.1cm}
+$D=\dfrac{R_S}{2}\sqrt{\dfrac{C}{L}}$\\
+\end{minipage} &
+\begin{minipage}[]{7cm}
 \vspace{0.2cm}
 $D=\dfrac{1}{2\,R_P}\sqrt{\dfrac{L}{C}}$\\
 \end{minipage}\\
 \hline
+%Abklingkonst. : &
+%\begin{minipage}[]{7cm}
+%\vspace{0.2cm}
+%$\delta=\dfrac{R_S}{2L}$\\
+%\end{minipage}\\
+%\hline
 \end{tabular}
-\renewcommand{\arraystretch}{1}
 
 \subsubsection{G"ute}
 $Q=2\pi\dfrac{E(t)}{E(t)-E(t+T)}=\dfrac{1}{2D}=V_m=\dfrac{\omega_0}{\Delta \omega}$\quad wobei \quad $E=\dfrac{C\,U^2}{2}+\dfrac{L\,I^2}{2}=\dfrac{L\,I_0^{\,2}}{2}=\dfrac{L\,\omega_0^{\,2}\,C^2\,U_0^{\,2}}{2}=\dfrac{C\,U_0^{\,2}}{2}$
