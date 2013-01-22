@@ -272,19 +272,92 @@ Infra-/Ultraschall & Infraschall $<$ 16Hz...20kHz $<$ Ultraschall ...10GHz $<$ H
 \subsubsection{Prinzip von Huygens \kuchling{229}}
 Jeder Punkt einer Welle ist Zentrum einer neuen Kugelwelle  
 (sogenannte Huygens‘sche Elementarwelle). 
-Die Wellenfront zu einem späteren Zeitpunkt ist die Einhüllende dieser Huygens'schen Elementarwellen.
+Die Wellenfront zu einem späteren Zeitpunkt ist die Einhüllende dieser Huygens'schen Elementarwellen.\\
+
+\begin{minipage}{9.5cm}
+	\subsubsection{Beugung am Doppelspalt}
+	\begin{minipage}{4.5cm}
+	\textbf{Minimum n-ter Ordnung}\\
+		$\sin(\varphi_n) \cdot s = (2n + 1)\cdot \frac{\lambda}{2} $\\
+	\textbf{Maximum n-ter Ordnung}\\
+			$\sin(\varphi_n) \cdot s = n \cdot \lambda $\\ 
+			\\
+		\begin{minipage}{4.5cm}
+			$\lambda$ = Wellenlänge des Lichts\\
+			$s$ = Spalt-Abstand\\
+			$\varphi_n$ = Winkel n-ter Ordnung\\
+			$n$ = 0,1,2,... = Ordnung
+		\end{minipage}
+	\end{minipage}
+	\begin{minipage}{4cm}
+		\includegraphics[width = 4cm]{./bilder/beugung-doppelspalt}
+	\end{minipage}
+\end{minipage}
+\begin{minipage}{9cm}
+	\subsubsection{Beugung am Einfachspalt}
+	\begin{minipage}{4.5cm}
+	\textbf{Minimum n-ter Ordnung}\\
+		$\sin(\varphi_n) \cdot s = n \cdot \lambda $\\ 	
+	\textbf{Maximum n-ter Ordnung}\\
+		$\sin(\varphi_n) \cdot s = (2n + 1)\cdot \frac{\lambda}{2} $\\	
+		\\
+		\begin{minipage}{4.5cm}
+			$\lambda$ = Wellenlänge des Lichts\\
+			$s$ = Spalt-Abstand\\
+			$\varphi_n$ = Winkel n-ter Ordnung\\
+			$n$ = 0,1,2,... = Ordnung
+		\end{minipage}
+	\end{minipage}
+	\begin{minipage}{4cm}
+		\includegraphics[width = 4cm]{./bilder/beugung-einfachspalt}
+	\end{minipage}
+\end{minipage}
+
 
 \subsubsection{Beugung am Gitter}
-\begin{minipage}{3cm}
-	$n \cdot \lambda = g \cdot \sin(\varphi_n)$
+\begin{minipage}{6cm}
+	\textbf{Hauptmaximum n-ter Ordnung}\\
+	$\boxed{\sin(\varphi_n) \cdot d = n \cdot \lambda}$\\
+	\\
+	\begin{minipage}{6cm}
+		$\lambda$ = betrachtete Lichtwellenlänge\\
+		$d$ = konstanter Spaltenabstand\\
+		$\varphi_n$ = Maximumwinkel n-ter Ordnung \\
+		$n$ = 0,1,2,... = Ordnung
+	\end{minipage}
 \end{minipage}
 \begin{minipage}{5cm}
-	$\lambda$ = Wellenlänge des Lichts\\
-	g = Abstand der Striche\\
-	$\varphi_n$ = Winkel, bei dem ein Maximum ist\\
-	n = das wievielte Maximum es ist
+	\includegraphics[width = 4cm]{./bilder/beugung-gitter}
+\end{minipage}
+\begin{minipage}{8cm}
+	\textbf{Bedingungen für optimales optisches Gitter}
+	\begin{enumerate}
+		\item Möglichst kleine Gitterkonstante $\mathbf{d}$
+		\item Möglichst grosse Gitter-Zahl $\mathbf{z}$
+		\item Möglichst kleine Gitter-Breite $\mathbf{s}$
+	\end{enumerate}
+\end{minipage}\\
+\\ \\
+\begin{minipage}{18cm}
+	\begin{tabular}{lllll}
+	\parbox{4.5cm}{Intentitäts-Verteilung	\textbf{Gitter}}
+		& $\approx$
+		& \parbox{5.5cm}{Formfaktor\\
+				{\small = Intensitätsverteilung \textbf{Einzelspalt}}}
+		& $\times$
+		& \parbox{6cm}{Interferenzfunktion\\
+						{\small = Intensitätsverteilung \textbf{Doppelspalt}}}\\	
+	\parbox{4.5cm}{\includegraphics[width = 4.5cm]{./bilder/intensitaetsverteilung-gitter}}	
+		& $\approx$
+		& \parbox{4.5cm}{\includegraphics[width = 4.5cm]{./bilder/intensitaetsverteilung-einzelspalt}}
+		& $\times$
+		& \parbox{4.5cm}{\includegraphics[width = 4.5cm]{./bilder/intensitaetsverteilung-doppelspalt}}
+		\\			
+	\end{tabular}
+	Dabei entsteht immer z-2 Neben-Maxima.
 \end{minipage}
 
-%TODO Beugung am Doppelspalt
-%TODO Beugang am Einfachspalt
+\subsubsection{Babinet-Theorem}
+Komplemetäre Strukturen (also Negativ und Positiv) liefern gleiche Beugungsbilder
+
 \newpage
