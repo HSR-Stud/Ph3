@@ -4,3 +4,5 @@ Ph3SWO.pdf
 tmp/
 *.log
 /*.out
+/*.gz
+/tmp/*
