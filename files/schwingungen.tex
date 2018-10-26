@@ -1,6 +1,6 @@
 \section{Schwingungen \kuchling{192} \stoecker{235}}
 \subsection{Ungedämpfte Schwingungen}
-\renewcommand{\arraystretch}{2}
+\renewcommand{\arraystretch}{1.75}
 \begin{tabular}{|p{4cm}|p{8cm}|p{6cm}|}
 	\hline
 	\begin{minipage}[]{4cm}
@@ -40,7 +40,7 @@
 	t+\varphi)^2)=\dfrac{m\,\omega^2\,A^2}{2}$\\
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
-		$E$ = Energie $[J]\\$
+		$E$ = Energie $[J]$\\
 		$v=\dot y$ = Geschwindigkeit $[\frac{m}{s}]$\\
 		$m$ = Masse $[kg]$\\	
     \end{minipage}\\
@@ -108,16 +108,16 @@
 	J_A\ddot{\varphi}+m\,g\,a\,\varphi=0$\\ \\
 	$\omega_0 = \sqrt{\dfrac{m\,g\,a}{J_A}}=\sqrt{\dfrac{g}{l^{*}}} \qquad
 	T=2\pi\sqrt{\dfrac{J_A}{m\,g\,a}}=2\pi\sqrt{\dfrac{l^*}{g}}$\\ \\
-	$l^{*}=\dfrac{J_A}{m\,a}=\dfrac{J_M}{m\,x} = \dfrac{J_{S}}{m\cdot a}+a$\\ 
+	$l^{*}=\dfrac{J_A}{m\,a}=\dfrac{J_M}{m\,x} = \dfrac{J_{S}}{m\cdot a}+a\quad a=\sqrt{\frac{J_s}{m}}$\\ 
 	bei mehreren Elementen: \parbox{3cm}{
 			$J_A = \sum J_{A_i}$\\
 				 $m = \sum m_i$}\\ \\
-	$J_A=J_S+m\,a^2 \qquad J_M=J_S+m\,x^2$\\ \\
+	$J_A=J_S+\underbrace{m\,a^2}_\textrm{Punktmasse} \qquad J_M=J_S+m\,x^2$\\ \\
 	\textbf{Perkussionszentrum}\\
 	Trifft ein Schlag den Schwingungsmittelpunkt $M$ wirken keine Kräfte auf den
 	Punkt $A$ \& umgekehrt\\
 	\textbf{Minimale Schwingungsdauer}\\
-	$l_{min}^* = 2\sqrt{\dfrac{J_S}{m}}$ wenn $a=x=a_{min}$
+	$l_{min}^* = 2\sqrt{\dfrac{J_S}{m}}$ wenn $a=x=a_{min}$\\$ T_{min} = 2\pi\sqrt{\frac{2}{g}\sqrt{\frac{J_s}{m}}}$
 	\end{minipage} &
 	\begin{minipage}[]{6cm}
 		\includegraphics[width=6cm]{./bilder/physpendel.png}\\	
@@ -141,6 +141,8 @@
     \end{minipage}\\
 	\hline	
 \end{tabular}
+
+Komplizierte Pendelsysteme über Energieerhaltung berechnen. $E_{kin}+E_{pot}+E_{rot} = \textrm{konst.}\quad \dot{E}_{kin} =0$
 \renewcommand{\arraystretch}{1}
 
 \subsection{Gedämpfte Schwingungen}
@@ -301,7 +303,7 @@ Die \textcolor{blue}{Erregungsschwingung} ist jeweils das Störglied der DGL.\\
     \end{minipage} \\
 \hline
 \parbox{6cm}{
-	\textbf{Unwuchterregung}\\ \\
+	\textbf{Unwuchterregung}\label{Unwucht}\\ \\
 	\includegraphics[width=6cm]{./bilder/unwuchterregung.png}\\ \\
 	$m_R$ Rotormasse (bewegt)\\
 	$e$ Exzentrizit"at (Distanz Achse$\leftrightarrow$SP) \\

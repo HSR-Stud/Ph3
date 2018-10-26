@@ -1,0 +1,30 @@
+\newpage
+
+\section{Schall}
+\textbf{Sirene}
+Eine Sirene emittiert eine Schallleistung von 100W gleichmässig in alle Richtungen. In welchem Abstand beträgt der Schallintensitätspegel 50dB. (Ohne Dämpfung)
+\begin{align*}
+I&=\frac{P}{4\pi r^2} \Rightarrow r = \sqrt{\frac{P}{4\pi I}}\\
+L_I &= 10\log  \frac{I}{I_0} \Rightarrow I = I_0^{L_I/10}\\
+r &= \sqrt{\frac{P}{4\pi I_0 \cdot 10^{L_I/10}}} = \sqrt{\frac{100}4\pi 10^{-12} \cdot 10^{50/10}}
+\end{align*}
+
+\textbf{Elektrischer Funke}\\
+Ein elektrischer Funke überspringt eine gerade Linie von $L=10m$ und erzeugt einen Schallimpuls der Radial nach aussen abstrahlt. Die Leistung $P$ der Schallemission beträgt  $16kW$. Welche Intensität hat der Schall in einem Abstand von 12m?\\
+Welche Leistung nimmt ein akustischer Detektor mit einer aktiven Fläche $A=2cm^2$ in einem Abstand $r_9=9m$ auf.
+
+\begin{align*}
+I&=\frac{P}{A} = \frac{P}{2\pi r L} = \frac{16kW}{2\pi 12m 10m} = 21.22\frac{W}{m}\\
+P&=I\cdot A\\
+I_9&=\frac{P}{A} = \frac{P}{2\pi r_9 L} = \frac{16kW}{2\pi 9m 10m} = 28.29\frac{W}{m^2}\\
+P&= I_9\cdot A = 28.29\frac{w}{m^2} \cdot 2cm^2 \cdot \frac{m^2}{10'000 cm^2} = 5.66mW
+\end{align*}
+
+\textbf{Konzert vs Pressluft}\\
+Ein Rockkonzert hat 46m vor der Bühne einen Schallpegel von $L_B = 120dB$ Ein Presslufthammer hat einen Schallpegel von $L_H = 92dB$. Welches Verhältnis haben die Schallintensitäten zueinander.
+\begin{align*}
+L&= (10db) \log\left(\frac{I}{I_0}\right)\\
+\Delta L &=(10dB)\left(\log\frac{I_B}{I_H}\right) = (10dB) \log \frac{I_B}{I_H}\\
+\Rightarrow 28dB &= (10dB) \cdot  \log\frac{I_B}{I_H}\\
+\frac{I_B}{I_H} &= 10^{2.8} = 631
+\end{align*}
